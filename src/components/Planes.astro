@@ -2,11 +2,12 @@
 import CardPrecio from "./CardPrecio.astro";
 ---
 
-<section class="h-[100vh] w-screen bg-amber-300">
-    <div class="h-[35vh] w-screen bg-cyan-200">
-        Escoge
+<section class="h-[43rem] w-screen bg-[#faf8f7] flex items-center flex-col ">
+    <div class="h-[13rem]  flex flex-col text-center w-[95%] justify-between">
+        <p class="font-bold text-[2rem] leading-[2.1rem] text-[#201E1C] mt-16">Escoge el plan que mejor se ajuste a ti.</p>
+        <p class="font-medium text-[1.2rem] leading-[1.4rem] text-[#757575] mt-8">Cualquier plan te da acceso completo a nuestra plataforma.</p>
     </div>
-    <div class="h-[65vh] w-screen bg-cyan-400" id="planes">
+    <div class="h-[65vh] w-screen bg-[#FAF8F7] mt-16" id="planes">
         <CardPrecio/>
     </div>
 </section>
