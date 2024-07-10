@@ -1,17 +1,14 @@
-<section class="h-[57rem] w-screen bg-amber-300">
-    <div class="h-[40vh] w-screen bg-cyan-200">
-        Head
+---
+import Cart from './Cart'
+---
+<section class="bg-[#201E1C]">
+    <div class="h-[12rem] w-screen flex flex-col justify-center items-center text-center text-pretty">
+        <p class="font-bold text-white h-14 w-96 text-[2rem] leading-[2.125rem] mt-2">Creamos un producto sin comparación.</p>
+        <p class="font-medium text-[#808080] h-2 w-auto text-[1.125rem] leading-[1.25rem] mt-12">Confiable y diseñado para su uso diario.</p>
     </div>
-    <div class="h-[25vh] w-screen bg-cyan-400">
-        tarjetas
-    </div>
-    <div class="h-[25vh] w-screen bg-cyan-600">
-        tarjetas
-    </div>
-    <div class="h-[25vh] w-screen bg-cyan-800">
-        tarjetas
-    </div>
-    <div class="h-[25vh] w-screen bg-sky-950">
-        tarjetas
+    <div class="h-[50rem] w-screen flex flex-col  items-center mt-7">
+        <div class="w-full flex items-center flex-col">
+            <Cart client:load/>
+        </div>
     </div>
 </section>
