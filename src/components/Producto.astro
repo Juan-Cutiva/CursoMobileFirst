@@ -73,12 +73,24 @@
 <style>
 	#parent {
 		display: grid;
-		grid-template-columns: 102px 96px;
-		grid-template-rows: repeat(4, 40px);
-		grid-column-gap: 0px;
-		grid-row-gap: 0px;
+		grid-template-columns: 6.375rem 6rem;
+		grid-template-rows: repeat(4, 2.5rem);
+		grid-column-gap: 0rem;
+		grid-row-gap: 0rem;
 		align-items: center;
 		justify-content: center;
+	}
+
+	@media (min-width: 430px){
+		#parent {
+		display: grid;
+		grid-template-columns: 7.5rem 7rem;
+		grid-template-rows: repeat(4, 2.5rem);
+		grid-column-gap: 0rem;
+		grid-row-gap: 0rem;
+		align-items: center;
+		justify-content: center;
+	}
 	}
 
 	#div1 {
