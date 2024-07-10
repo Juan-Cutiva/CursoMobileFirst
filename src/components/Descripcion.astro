@@ -1,14 +1,19 @@
 ---
-import Cart from './Cart'
+import Cart from './Cart';
 ---
+
 <section class="bg-[#201E1C]">
-    <div class="h-[12rem] w-screen flex flex-col justify-center items-center text-center text-pretty">
-        <p class="font-bold text-white h-14 w-96 text-[2rem] leading-[2.125rem] mt-2">Creamos un producto sin comparación.</p>
-        <p class="font-medium text-[#808080] h-2 w-auto text-[1.125rem] leading-[1.25rem] mt-12">Confiable y diseñado para su uso diario.</p>
-    </div>
-    <div class="h-[50rem] w-screen flex flex-col  items-center mt-7">
-        <div class="w-full flex items-center flex-col">
-            <Cart client:load/>
-        </div>
-    </div>
+	<div class="flex h-[12rem] w-screen flex-col items-center justify-center text-pretty text-center">
+		<p class="mt-2 h-14 w-96 text-[2rem] font-bold leading-[2.125rem] text-white">
+			Creamos un producto sin comparación.
+		</p>
+		<p class="mt-12 h-2 w-auto text-[1.125rem] font-medium leading-[1.25rem] text-[#808080]">
+			Confiable y diseñado para su uso diario.
+		</p>
+	</div>
+	<div class="mt-7 flex h-[50rem] w-screen flex-col items-center">
+		<div class="flex w-full flex-col items-center">
+			<Cart client:load />
+		</div>
+	</div>
 </section>

@@ -1,13 +1,17 @@
 ---
-import CardPrecio from "./CardPrecio.astro";
+import CardPrecio from './CardPrecio.astro';
 ---
 
-<section class="h-[43rem] w-screen bg-[#faf8f7] flex items-center flex-col ">
-    <div class="h-[13rem]  flex flex-col text-center w-[95%] justify-between">
-        <p class="font-bold text-[2rem] leading-[2.1rem] text-[#201E1C] mt-16">Escoge el plan que mejor se ajuste a ti.</p>
-        <p class="font-medium text-[1.2rem] leading-[1.4rem] text-[#757575] mt-8">Cualquier plan te da acceso completo a nuestra plataforma.</p>
-    </div>
-    <div class="h-[65vh] w-screen bg-[#FAF8F7] mt-16" id="planes">
-        <CardPrecio/>
-    </div>
+<section class="flex h-[43rem] w-screen flex-col items-center bg-[#faf8f7]">
+	<div class="flex h-[13rem] w-[95%] flex-col justify-between text-center">
+		<p class="mt-16 text-[2rem] font-bold leading-[2.1rem] text-[#201E1C]">
+			Escoge el plan que mejor se ajuste a ti.
+		</p>
+		<p class="mt-8 text-[1.2rem] font-medium leading-[1.4rem] text-[#757575]">
+			Cualquier plan te da acceso completo a nuestra plataforma.
+		</p>
+	</div>
+	<div class="mt-16 h-[65vh] w-screen bg-[#FAF8F7]" id="planes">
+		<CardPrecio />
+	</div>
 </section>

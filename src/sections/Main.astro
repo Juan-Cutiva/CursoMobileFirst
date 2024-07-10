@@ -1,17 +1,24 @@
 ---
-import Producto from "../components/Producto.astro";
-import Descripcion from "../components/Descripcion.astro"
-import Planes from "../components/Planes.astro";
+import Producto from '../components/Producto.astro';
+import Descripcion from '../components/Descripcion.astro';
+import Planes from '../components/Planes.astro';
 ---
 
 <main class="flex flex-col items-center">
-    <Producto/>
-    <Descripcion/>
-    <section class="sm:h-[47rem] w-screen bg-[#201E1C]">
-        <picture class="flex items-center justify-center">
-            <source srcset="https://s3-alpha-sig.figma.com/img/2dc1/ad4c/e683f3d700fef7cb7b34752111f6f6e9?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fIZWw6dhkk3qXOVp33mTcqs14VHBb4bXZkCywNbax8d8cC6RlRqMkmzRB6Niw-qgGpviE8gzBrIfvmz2d-vCthh0j0s9qFqfw~tIyyBM0JFA6n7c6q~drSe1Dnime9~69r0oaUJakLl~if4X1GdGJhPK9VxUnbQ1kYTe4~bpX0eJYVH-qI8-DgU8RlKLGNBBYh~hMECqxAomcW-I9hvKnKMmtK3P5Md6FgJ2ylMiApw3RP84aDQz8nYqsnL5LOqL4ld5iu28lnvnNmC8svzMZXlA38nb8x92mVo3trHiPj2kUOk8D4kftyXfG96VHVnrWJu0oeepFogvfXxggzKNxQ__" media="(min-width: 640px)" />
-            <img class="h-full w-full sm:h-[43.5rem] md:w-[57rem] sm:w-[90%]  sm:rounded-md" src="/bitcoinbaby.png" alt="img">
-        </picture>
-    </section>
-    <Planes/>
+	<Producto />
+	<Descripcion />
+	<section class="w-screen bg-[#201E1C] sm:h-[47rem]">
+		<picture class="flex items-center justify-center">
+			<source
+				srcset="https://s3-alpha-sig.figma.com/img/2dc1/ad4c/e683f3d700fef7cb7b34752111f6f6e9?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fIZWw6dhkk3qXOVp33mTcqs14VHBb4bXZkCywNbax8d8cC6RlRqMkmzRB6Niw-qgGpviE8gzBrIfvmz2d-vCthh0j0s9qFqfw~tIyyBM0JFA6n7c6q~drSe1Dnime9~69r0oaUJakLl~if4X1GdGJhPK9VxUnbQ1kYTe4~bpX0eJYVH-qI8-DgU8RlKLGNBBYh~hMECqxAomcW-I9hvKnKMmtK3P5Md6FgJ2ylMiApw3RP84aDQz8nYqsnL5LOqL4ld5iu28lnvnNmC8svzMZXlA38nb8x92mVo3trHiPj2kUOk8D4kftyXfG96VHVnrWJu0oeepFogvfXxggzKNxQ__"
+				media="(min-width: 640px)"
+			/>
+			<img
+				class="h-full w-full sm:h-[43.5rem] sm:w-[90%] sm:rounded-md md:w-[57rem]"
+				src="/bitcoinbaby.png"
+				alt="img"
+			/>
+		</picture>
+	</section>
+	<Planes />
 </main>
